@@ -1,5 +1,9 @@
+:root {
+  --primary-colour: rgb(240, 145, 161);
+}
+
 body {
-  background: #bbb6b6;
+  background: #d1cccc;
   margin: 0;
   font-family: 'arial';
 }
@@ -9,7 +13,25 @@ body {
   padding: 1em;
 }
 
-.logo {
-  color: red;
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 1.2em;
+}
+
+.navbar .logo span {
+  color: var(--primary-colour);
+}
+
+nav {
+  display: none;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
 }
 /*# sourceMappingURL=main.css.map */
