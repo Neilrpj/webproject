@@ -1,1 +1,15 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+body {
+  background: #bbb6b6;
+  margin: 0;
+  font-family: 'arial';
+}
+
+.navbar {
+  background: white;
+  padding: 1em;
+}
+
+.logo {
+  color: red;
+}
+/*# sourceMappingURL=main.css.map */
