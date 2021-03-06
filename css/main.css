@@ -176,7 +176,7 @@ nav li a:hover {
   color: var(--primary-colour);
 }
 
-nav .mobile-menu-exit {
+.mobile-menu-exit {
   float: right;
   margin: 0.5em;
   cursor: pointer;
@@ -189,8 +189,8 @@ nav .mobile-menu-exit {
   .navbar .container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1080px auto;
-        grid-template-columns: 1080px auto;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
             justify-content: unset;
@@ -215,6 +215,7 @@ nav .mobile-menu-exit {
   }
   .navbar nav a {
     color: black;
+    font-size: 1.3em;
     padding: .4em .4em;
   }
   .navbar nav ul.primary-nav {
