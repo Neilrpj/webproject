@@ -1,6 +1,7 @@
 :root {
   --primary-colour: rgb(240, 145, 161);
   --secondary-colour: #d1cccc;
+  --third-colour: rgb(110, 62, 70);
 }
 
 body {
@@ -89,7 +90,7 @@ section {
 }
 
 .feature-section {
-  background: #6e3e46;
+  background: var(--third-colour);
   color: white;
 }
 
@@ -141,5 +142,45 @@ ul.feature-list li:before {
   border: 3px solid white;
   border-radius: 50%;
   margin-top: -5.5em;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 40%;
+  right: 0;
+  top: 0;
+  text-align: left;
+  background: var(--third-colour);
+  padding: 1em;
+  height: 100vh;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: .75em;
+  font-size: 1.2em;
+  text-align: right;
+}
+
+nav li a:hover {
+  font-weight: bold;
+  color: var(--primary-colour);
+}
+
+nav .mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
