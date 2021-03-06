@@ -1,5 +1,6 @@
 :root{
     --primary-colour: rgb(240, 145, 161);
+    --secondary-colour: #d1cccc;
 }
 
 body {
@@ -41,7 +42,7 @@ body {
 }
 
 a{
-    color: rgb(87, 85, 85);
+    color: var(--secondary-colour);
 }
 
 ul{
@@ -70,7 +71,7 @@ section{
     h1{
         font-size: 2.5em;
         line-height: 1.3em;
-        margin-top: 0mm;
+        margin-top: 0em;
     }
     .primary-cta{
         background: var(--primary-colour);
@@ -81,5 +82,63 @@ section{
         border-radius: 5em;
         font-weight: bold;
         display: inline-block;
+        margin: 0mm;
+
     }
+
+}
+
+.hero-image{
+    margin-top: 2em;
+    width: 100%;
+}
+
+.feature-section{
+    background: rgb(110, 62, 70);
+    color: white;
+}
+
+ul.feature-list{
+    text-transform: capitalize;
+    margin: 0;
+    padding-left: 0.1em;
+    // display config
+    
+    li{
+        font-size: 1.1em;
+        margin-bottom: 1em;
+        margin-left: 2em;
+        position: relative;
+
+        &:before{
+            content: '';
+            margin-left: -2em;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-image: url(../image/tick.svg);
+            background-size: contain;
+            margin-right: 0.5em;
+
+        }
+    }
+}
+
+.feature-section img{
+    display: none;
+}
+
+.review-section{
+    background: var(--secondary-colour);
+
+    ul{
+        li{
+            background: var(--primary-colour);
+            img{
+                width: 5em;
+                height: 5em;
+            }
+        }
+    }
+
 }
