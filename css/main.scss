@@ -23,7 +23,6 @@ body {
         span{
             color: var(--primary-colour)
         }
-
     }
 
     nav{
@@ -38,7 +37,6 @@ body {
     .mobile-menu{
         cursor: pointer;
     }
-
 }
 
 a{
@@ -68,11 +66,12 @@ section{
         letter-spacing: 2mm;
     }
 
-    h1{
+    h1 {
         font-size: 2.5em;
         line-height: 1.3em;
-        margin-top: 0em;
+        margin-top: 0.2em;
     }
+
     .primary-cta{
         background: var(--primary-colour);
         color: white;
@@ -82,18 +81,15 @@ section{
         border-radius: 5em;
         font-weight: bold;
         display: inline-block;
-        margin: 0mm;
-
     }
-
 }
 
 .hero-image{
-    margin-top: 2em;
     width: 100%;
+    margin-top: 2em;
 }
 
-.feature-section{
+section.feature-section{
     background: var(--third-colour);
     color: white;
 }
@@ -102,7 +98,7 @@ ul.feature-list{
     text-transform: capitalize;
     margin: 0;
     padding-left: 0.1em;
-    // display config
+    //grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
     
     li{
         font-size: 1.1em;
@@ -160,10 +156,9 @@ nav{
     width: 40%;
     right: 0;
     top: 0;
-    text-align: left;
     background: var(--third-colour);
-    padding: 1em;
     height: 100vh;
+    padding: 1em;
 
     ul.primary-nav{
         margin-top: 5em;
@@ -190,4 +185,41 @@ nav{
         margin: 0.5em;
         cursor: pointer;
     }
+}
+
+@media only screen and (min-width: 760px){
+    .mobile-menu, .mobile-menu-exit{
+        display: none;
+    }
+
+    .navbar .container{
+        display: grid;
+        grid-template-columns: 1080px auto;
+        justify-content: unset;
+    }
+
+    .navbar nav{
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+
+        ul {
+            display: flex;
+        }
+
+        a {
+            color: black;
+            padding: .4em .4em;
+        }
+
+        ul.primary-nav{
+            margin: 0;
+        }
+   
+    }
+
 }

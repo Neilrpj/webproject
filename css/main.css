@@ -69,7 +69,7 @@ section {
 .left-col h1 {
   font-size: 2.5em;
   line-height: 1.3em;
-  margin-top: 0em;
+  margin-top: 0.2em;
 }
 
 .left-col .primary-cta {
@@ -81,15 +81,14 @@ section {
   border-radius: 5em;
   font-weight: bold;
   display: inline-block;
-  margin: 0mm;
 }
 
 .hero-image {
-  margin-top: 2em;
   width: 100%;
+  margin-top: 2em;
 }
 
-.feature-section {
+section.feature-section {
   background: var(--third-colour);
   color: white;
 }
@@ -154,10 +153,9 @@ nav {
   width: 40%;
   right: 0;
   top: 0;
-  text-align: left;
   background: var(--third-colour);
-  padding: 1em;
   height: 100vh;
+  padding: 1em;
 }
 
 nav ul.primary-nav {
@@ -182,5 +180,45 @@ nav .mobile-menu-exit {
   float: right;
   margin: 0.5em;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 760px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1080px auto;
+        grid-template-columns: 1080px auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    padding: .4em .4em;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
