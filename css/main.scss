@@ -170,11 +170,13 @@ nav{
             text-decoration: none;
             display: block;
             padding: .75em;
-            font-size: 1.2em;
+            font-size: 1em;
             text-align: right;
+            transition: all 0.5s;
 
             &:hover{
                 font-weight: bold;
+                font-size: 1.4em;
                 color: var(--primary-colour);
             }
         }
@@ -193,7 +195,7 @@ nav{
     }
 
     .navbar .container{
-        display: grid;
+        display: flex;
         grid-template-columns: 180px auto;
         justify-content: unset;
     }
@@ -201,6 +203,7 @@ nav{
     .navbar nav{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         background: none;
         position: unset;
         height: auto;
