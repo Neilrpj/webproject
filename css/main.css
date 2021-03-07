@@ -97,6 +97,10 @@ ul.feature-list {
   text-transform: capitalize;
   margin: 0;
   padding-left: 0.1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 }
 
 ul.feature-list li {
@@ -230,6 +234,59 @@ nav li a:hover {
   }
   .navbar nav .currentPage {
     font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 1084px) {
+  .container {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  section {
+    padding: 5em 4em;
+  }
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hero .container .left-col {
+    margin: 3em 3em 0 5em;
+  }
+  .hero .container .left-col h1 {
+    font-size: 3em;
+    width: 90%;
+  }
+  .hero-image {
+    width: 50%;
+    height: 50%;
+    margin-right: 0;
+  }
+  ul.feature-list {
+    display: block;
+    margin-left: 2em;
+    font-size: 1.2em;
+  }
+  .feature-section {
+    position: relative;
+  }
+  .feature-section img {
+    display: block;
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    width: 50%;
+  }
+  .review-section ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .review-section ul li {
+    margin: 0 5px;
   }
 }
 /*# sourceMappingURL=main.css.map */
