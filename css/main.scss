@@ -190,6 +190,11 @@ nav{
 }
 
 @media only screen and (min-width: 760px){
+
+    .logo{ //quick fix to having the logo in line with the nav bar
+        padding: 9px;
+    }
+
     .mobile-menu, .mobile-menu-exit{
         display: none;
     }
@@ -203,7 +208,6 @@ nav{
     .navbar nav{
         display: flex;
         justify-content: space-between;
-        align-items: center;
         background: none;
         position: unset;
         height: auto;
@@ -223,6 +227,10 @@ nav{
         ul.primary-nav{
             margin: 0;
 
+        }
+
+        .currentPage {
+            font-weight: bold;
         }
    
     }
